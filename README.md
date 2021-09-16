@@ -46,7 +46,7 @@ Our data collection, cleaning, and analysis are contained in the following noteb
 - Imported Bitcoin (BTC) historical prices into Pandas dataframe using the CoinGeckoAPI and exported the historical prices into a csv file.
 - Imported tweets from the Tweepy API and used pandas and pprint to pull the data and export to a csv file for a few of the days.
 
-### **crypto_sentiment.ipynb (base environment)
+### **crypto_sentiment.ipynb (base environment)**
 - Imported the newsapi to pull all of the news articles for Bitcoin & Litecoin.
 - Used Natural Language Processing to determine the positive, negative, and neutral scores for the news articles
 - Used 2 n-grams to come up with the top 10 words for each coin.
@@ -54,17 +54,23 @@ Our data collection, cleaning, and analysis are contained in the following noteb
 - Used Name Entity Recognition model and used spacy to visualize the tags
 - Imported the tweepy API to pull the recent 1,000 tweets relating to Bitcoin and Litecoin
 
-### **btc_vader_sentiment.ipynb
+### **btc_vader_sentiment.ipynb**
 - Used the vader lexicon sentiment Intensity analyzer library
 - Downloaded news articles for Bitcoin and Litecoin using the newsapi api. 
 - Created a Facebook Libra sentiment score dataframe and listed out the stats.
 - Downloaded sentiment score to csv.
 
-### **ltc_vader_sentiment.ipynb
+### **ltc_vader_sentiment.ipynb**
 - Used the vader lexicon sentiment Intensity analyzer library
 - Downloaded news articles for Bitcoin and Litecoin using the newsapi api. 
 - Created a Facebook Libra sentiment score dataframe and listed out the stats.
 - Downloaded sentiment score to csv.
+
+### **SentimentAnalysis-Bitcoin.ipynb**
+ - Used Tweepy Twitter API to use Tweets to determine sentiment.
+
+### **SentimentAnalysis-Litecoin.ipynb**
+ - Used Tweepy Twitter API to use Tweets to determine sentiment.
 
 ### **BTC_trading_dashboard.ipynb (pyvizenv)**
 - Imported CSV files from above notebook into Pandas dataframe.
@@ -79,10 +85,8 @@ Our data collection, cleaning, and analysis are contained in the following noteb
 - Created HVPlot line charts for both the SMA50, SMA100, and Metrics
 - Created HVPlot tables
 - Created a trading dashboard with hvplot
-<<<<<<< HEAD
-=======
 
-### ** btc_stock_predictor_closing.ipynb (pyvizenv)
+### ** btc_stock_predictor_closing.ipynb (pyvizenv)**
 - Imported numpy random and tensorflow random libraries.
 - Imported the sentiment csv file from the btc_vader_sentiment
 - Imported the Bitcoin historical prices.
@@ -93,7 +97,7 @@ Our data collection, cleaning, and analysis are contained in the following noteb
 - Build and Train the LSTM RNN
 - Show Model Performance
 
-### ** ltc_stock_predictor_closing.ipynb (pyvizenv)
+### ** ltc_stock_predictor_closing.ipynb (pyvizenv)**
 - Imported numpy random and tensorflow random libraries.
 - Imported the sentiment csv file from the btc_vader_sentiment
 - Imported the Bitcoin historical prices.
@@ -103,4 +107,25 @@ Our data collection, cleaning, and analysis are contained in the following noteb
 - Use the MinMaxScaler to scale data between 0 and 1.
 - Build and Train the LSTM RNN
 - Show Model Performance
->>>>>>> feature-branch
+
+### ** btc_stock_predictor_closing (pyvizenv)**
+- Imported numpy, pandas, hvplot, numpy.random, & tensorflow random libraries.
+- imported the sentiment from the Vader sentiment notebook
+- Imported the historical prices and indexed by date.
+- Joined the two dataframes.
+- Trained and Tested the combined dataset with the window_data function.
+- Split the data with a 70/30 split for the training and testing datasets.
+- Used the MinMaxScaler to scale the data.
+- Built the LSTM model.
+- Predicted the next days price using the last 10 and ploted out the results.
+
+### ** ltc_stock_predictor_closing (pyvizenv)**
+- Imported numpy, pandas, hvplot, numpy.random, & tensorflow random libraries.
+- imported the sentiment from the Vader sentiment notebook
+- Imported the historical prices and indexed by date.
+- Joined the two dataframes.
+- Trained and Tested the combined dataset with the window_data function.
+- Split the data with a 70/30 split for the training and testing datasets.
+- Used the MinMaxScaler to scale the data.
+- Built the LSTM model.
+- Predicted the next days price using the last 10 and ploted out the results.
