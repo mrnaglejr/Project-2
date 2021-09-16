@@ -33,10 +33,6 @@ Gathered data from two sources to pull historical prices for two Cryptocurrencie
 - Markdown library
 - Mathplotlib inline Library
 - Spacy library en_core_web_sm
-- Tweepy Library
-- Pycountry Library
-- json Library
-- pprint Library
 
 ## **Analysis Notebooks**
 Our data collection, cleaning, and analysis are contained in the following notebooks:
@@ -44,7 +40,6 @@ Our data collection, cleaning, and analysis are contained in the following noteb
 ### **Data_Prep.ipynb (base environment)** 
 - Imported historical stock prices for Litecoin (LTC) into Pandas dataframes using the Yahoo Finance API, and exported the historical prices into a csv file.
 - Imported Bitcoin (BTC) historical prices into Pandas dataframe using the CoinGeckoAPI and exported the historical prices into a csv file.
-- Imported tweets from the Tweepy API and used pandas and pprint to pull the data and export to a csv file for a few of the days.
 
 ### **crypto_sentiment.ipynb (base environment)
 - Imported the newsapi to pull all of the news articles for Bitcoin & Litecoin.
@@ -52,7 +47,6 @@ Our data collection, cleaning, and analysis are contained in the following noteb
 - Used 2 n-grams to come up with the top 10 words for each coin.
 - Used Word Clouds to summarize the news for each coin.
 - Used Name Entity Recognition model and used spacy to visualize the tags
-- Imported the tweepy API to pull the recent 1,000 tweets relating to Bitcoin and Litecoin
 
 ### **btc_vader_sentiment.ipynb
 - Used the vader lexicon sentiment Intensity analyzer library
@@ -79,8 +73,6 @@ Our data collection, cleaning, and analysis are contained in the following noteb
 - Created HVPlot line charts for both the SMA50, SMA100, and Metrics
 - Created HVPlot tables
 - Created a trading dashboard with hvplot
-<<<<<<< HEAD
-=======
 
 ### ** btc_stock_predictor_closing.ipynb (pyvizenv)
 - Imported numpy random and tensorflow random libraries.
@@ -103,4 +95,3 @@ Our data collection, cleaning, and analysis are contained in the following noteb
 - Use the MinMaxScaler to scale data between 0 and 1.
 - Build and Train the LSTM RNN
 - Show Model Performance
->>>>>>> feature-branch
